@@ -28,6 +28,7 @@ while True:
             mp_drawing_styles.get_default_hand_landmarks_style(),
             mp_drawing_styles.get_default_hand_connections_style())
 
+  image = cv2.resize(image, (0, 0), fx=0.5, fy=0.5)        
   cv2.imshow("Image", image)
   cv2.waitKey(1)
 
